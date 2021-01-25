@@ -12,5 +12,6 @@ async def on_message(message):
     embed=discord.Embed(description=message.content)
     embed.set_footer(text="dm to confess.")
     await bot.get_channel(channelid).send(embed = embed)
+    await bot.change_presence(activity=discord.Streaming(name="DM to confess", url="https://cock.li"))
 
 bot.run(token)
